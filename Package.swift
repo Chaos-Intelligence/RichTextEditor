@@ -27,7 +27,8 @@ let package = Package(
         .process("Web/rich_editor.html"),
         .process("Web/normalize.css"),
         .process("Web/style.css"),
-        .process("Web/rich_editor.js")
+        .process("Web/rich_editor.js"),
+        .process("Icons")
       ]),
     .testTarget(
       name: "RichTextEditorTests",

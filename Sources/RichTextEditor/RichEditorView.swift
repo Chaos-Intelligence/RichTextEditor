@@ -159,7 +159,7 @@ private let DefaultInnerLineHeight: Int = 21
   /// - parameter headerHTML: The header HTML that will be inserted after the default styles.
   /// - parameter footerHTML: The footer HTML that will be inserted after the default JavaScript.
   public func reloadHTML(with html: String, headerHTML: String = "", footerHTML: String = "") {
-    guard let filePath = Bundle(for: RichEditorView.self).path(forResource: "rich_editor", ofType: "html") else {
+    guard let filePath = Bundle.module.path(forResource: "rich_editor", ofType: "html") else {
       return
     }
     
