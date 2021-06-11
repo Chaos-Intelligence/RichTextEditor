@@ -3,6 +3,7 @@
 //
 //  Created by Caesar Wirth on 4/1/15.
 //  Updated/Modernized by C. Bess on 9/18/19.
+//  Added SPM support by: Glenn Posadas on 6/12/21
 //
 //  Copyright (c) 2015 Caesar Wirth. All rights reserved.
 //
@@ -14,7 +15,7 @@ import WebKit
 private let DefaultInnerLineHeight: Int = 21
 
 /// RichEditorDelegate defines callbacks for the delegate of the RichEditorView
-@objc public protocol RichEditorDelegate: class {
+@objc public protocol RichEditorDelegate: AnyObject {
   /// Called when the inner height of the text being displayed changes
   /// Can be used to update the UI
   @objc optional func richEditor(_ editor: RichEditorView, heightDidChange height: Int)

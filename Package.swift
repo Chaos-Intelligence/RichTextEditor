@@ -23,7 +23,12 @@ let package = Package(
     // Targets can depend on other targets in this package, and on products in packages this package depends on.
     .target(
       name: "RichTextEditor",
-      dependencies: []),
+      dependencies: [], resources: [
+        .process("rich_editor.html"),
+        .process("normalize.css"),
+        .process("style.css"),
+        .process("rich_editor.js")
+      ]),
     .testTarget(
       name: "RichTextEditorTests",
       dependencies: ["RichTextEditor"]),
