@@ -3,10 +3,10 @@
     "pins": [
       {
         "package": "RichTextEditor",
-        "repositoryURL": "/Users/glennposadas/Desktop/GIT/Outliant/RichTextEditor",
+        "repositoryURL": "https://github.com/Chaos-Intelligence/RichTextEditor.git",
         "state": {
           "branch": "main",
-          "revision": "cedb4adc0af1eb24074c6ac8bf2321174af0e624",
+          "revision": "39b763639042c7576c868a7f9a4536539694c0d3",
           "version": null
         }
       }
