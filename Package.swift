@@ -24,10 +24,10 @@ let package = Package(
     .target(
       name: "RichTextEditor",
       dependencies: [], resources: [
-        .process("rich_editor.html"),
-        .process("normalize.css"),
-        .process("style.css"),
-        .process("rich_editor.js")
+        .process("Assets/editor/rich_editor.html"),
+        .process("Assets/editor/normalize.css"),
+        .process("Assets/editor/style.css"),
+        .process("Assets/editor/rich_editor.js")
       ]),
     .testTarget(
       name: "RichTextEditorTests",
